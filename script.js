@@ -60,6 +60,12 @@ function createParticle() {
 for (let i = 0; i < 50; i++) {
     createParticle();
 }
+const themeToggle = document.getElementById('theme-toggle');
+
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+});
+
 
 // Mobile Menu Toggle
 const hamburger = document.querySelector('.hamburger');
